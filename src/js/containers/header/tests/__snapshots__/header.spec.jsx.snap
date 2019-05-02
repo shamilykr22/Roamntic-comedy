@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`containers/header/header has correct default options 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "black",
+      "display": "flex",
+      "flexDirection": "row",
+      "height": 400,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "width": "20%",
+      }
+    }
+  >
+    <img
+      className=""
+      data-css-1nfa0pr=""
+      src="assets/icons/Back.png"
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "color": "white",
+        "fontSize": 30,
+        "marginTop": 10,
+        "width": "60%",
+      }
+    }
+  >
+    Romatic comedy
+  </div>
+  <div
+    style={
+      Object {
+        "width": "20%",
+      }
+    }
+  >
+    <img
+      className=""
+      data-css-98ovo0=""
+      src="assets/icons/search.png"
+    />
+  </div>
+</div>
+`;

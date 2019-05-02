@@ -1,0 +1,47 @@
+[
+  {
+    "id": "Language.dutch",
+    "description": "Dutch",
+    "defaultMessage": "Dutch"
+  },
+  {
+    "id": "Language.english",
+    "description": "English",
+    "defaultMessage": "English"
+  },
+  {
+    "id": "Language.french",
+    "description": "French",
+    "defaultMessage": "French"
+  },
+  {
+    "id": "Language.german",
+    "description": "German",
+    "defaultMessage": "German"
+  },
+  {
+    "id": "Language.spanish",
+    "description": "Spanish",
+    "defaultMessage": "Spanish"
+  },
+  {
+    "id": "Language.danish",
+    "description": "Danish",
+    "defaultMessage": "Danish"
+  },
+  {
+    "id": "Language.italian",
+    "description": "Italian",
+    "defaultMessage": "Italian"
+  },
+  {
+    "id": "Language.norwegian",
+    "description": "Norwegian",
+    "defaultMessage": "Norwegian"
+  },
+  {
+    "id": "Language.swedish",
+    "description": "Swedish",
+    "defaultMessage": "Swedish"
+  }
+]

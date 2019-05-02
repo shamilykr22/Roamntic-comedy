@@ -1,0 +1,2 @@
+export const SET_HEADER_COMBO = 'HEADER:COMBO:SET';
+export const SET_HEADER_PERIOD = 'HEADER:PERIOD:SET';
