@@ -86,6 +86,6 @@ export default {
     width: 0
   },
   appBar: {
-    height: 55
+    height: 100
   }
 };

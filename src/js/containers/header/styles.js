@@ -10,13 +10,11 @@ export const root = css({
 });
 
 export const logoStyle = css({
-  height: '32px',
-  marginTop: '12px',
+  height: '40px',
+  marginTop: '30px',
   marginLeft: '16px',
   marginRight: '16px'
 });
 export const SearchIconStyle = css({
-  height: '32px',
-  marginTop: '12px',
-  float: 'right'
-});
+  height: '40px',
+  marginTop: '30px' });
