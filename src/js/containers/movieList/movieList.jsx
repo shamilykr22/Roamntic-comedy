@@ -8,9 +8,10 @@ const imageStyle = { marginBottom: 16,
   display: 'block',
   height: '81%',
   width: '90%',
-  marginLeft: 3
+  marginLeft: 10
 };
-const WrapperDivStyle = { paddingLeft: 25, paddingRight: 15, display: 'flex', width: '100%', flexWrap: 'wrap' };
+const WrapperDivStyle =
+{ paddingLeft: 25, paddingRight: 15, display: 'flex', width: '100%', flexWrap: 'wrap', height: '100%' };
 class MovieList extends React.Component {
   constructor(props) {
     super(props);
@@ -43,7 +44,7 @@ class MovieList extends React.Component {
       <DivWrapper style={{ height: '100%', backgroundColor: '#171717' }} onScrollStop={this.getNextData}>
         <div style={WrapperDivStyle}>
           { data.content &&
-            data.content.map(item => (<div style={{ width: '32.333%', height: 550, marginTop: 30 }}>
+            data.content.map(item => (<div style={{ width: '32.333%', height: '28%', marginTop: 30 }}>
               <Image
                 src={`assets/posters/${item.posterimage}`}
                 style={imageStyle}
@@ -65,7 +66,6 @@ MovieList.propTypes = {
 
 MovieList.defaultProps = {
   data: {},
-  prevLocation: '/privacyrecords',
   init: e => e,
   getNextData: e => e
 };

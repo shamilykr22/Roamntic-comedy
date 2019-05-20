@@ -3,6 +3,8 @@ import page1 from './PAGE1.json';
 import page2 from './PAGE2.json';
 import page3 from './PAGE3.json';
 
+const initialArray = page1.page.contentitems.content.concat(page2.page.contentitems.content);
+const finalArray = initialArray.concat(page3.page.contentitems.content);
 const defaultState = Immutable.fromJS({
 
   actionError: Immutable.Map({
@@ -24,6 +26,9 @@ export default (state = defaultState, action) => {
         .set('data', page1.page.contentitems)
         .set('pageNumber', 1);
     }
+    case 'MOVIE:LIST:SEARCH':
+      return state.set('data', { content: getSearchItems(action.searchText) });
+
     case 'MOVIE:MOVIE:NEXT:FETCH': {
       let newData = {};
       if (state.get('pageNumber') === 1) {
@@ -32,8 +37,8 @@ export default (state = defaultState, action) => {
         newData = page3;
       } else {
         return state.set('actionError', defaultState.get('actionError'))
-        .set('data', state.get('data'))
-        .set('pageNumber', state.get('pagenumrequested'));
+          .set('data', state.get('data'))
+          .set('pageNumber', state.get('pagenumrequested'));
       }
       const array = state.get('data').content;
       const array2 = newData.page.contentitems.content;
@@ -46,4 +51,9 @@ export default (state = defaultState, action) => {
     default:
       return state;
   }
+};
+
+export const getSearchItems = (searchText) => {
+  const array = finalArray.filter(item => item.name.toLowerCase().includes(searchText.toLowerCase()));
+  return array;
 };
