@@ -48,7 +48,7 @@ class MovieList extends React.Component {
               <Image
                 src={`assets/posters/${item.posterimage}`}
                 style={imageStyle}
-              /><div style={{ color: 'white', fontSize: 26, marginTop: 24 }}>
+              /><div style={{ color: 'white', fontSize: 26, marginTop: 24, marginLeft: 10 }}>
                 {item.name}
               </div>
             </div>))}
