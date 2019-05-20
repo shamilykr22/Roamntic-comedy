@@ -44,7 +44,7 @@ class MovieList extends React.Component {
       <DivWrapper style={{ height: '100%', backgroundColor: '#171717' }} onScrollStop={this.getNextData}>
         <div style={WrapperDivStyle}>
           { data.content &&
-            data.content.map(item => (<div style={{ width: '32.333%', height: '28%', marginTop: 30 }}>
+            data.content.map(item => (<div style={{ width: '32.333%', height: '33.33%', marginTop: 30 }}>
               <Image
                 src={`assets/posters/${item.posterimage}`}
                 style={imageStyle}
