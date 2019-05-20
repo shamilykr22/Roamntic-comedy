@@ -7,7 +7,7 @@ exports[`containers/header/header has correct default options 1`] = `
       "backgroundColor": "#171717",
       "display": "flex",
       "flexDirection": "row",
-      "height": 500,
+      "height": 400,
     }
   }
 >
@@ -21,6 +21,7 @@ exports[`containers/header/header has correct default options 1`] = `
     <img
       className=""
       data-css-1168dpr=""
+      onClick={[Function]}
       src="assets/icons/Back.png"
     />
   </div>
@@ -47,6 +48,7 @@ exports[`containers/header/header has correct default options 1`] = `
     <img
       className=""
       data-css-t2hlpo=""
+      onClick={[Function]}
       src="assets/icons/search.png"
     />
   </div>
